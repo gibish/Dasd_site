@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap");
+
+:root {
+  --color-bg: #122939;
+  --color-bg2: #15232d;
+  --color-text: #9ee7ff;
+  --color-text2: #aaaa8e;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* === HEADER === */
+
+.header {
+  margin: 15px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  line-height: 1.2;
+}
+
+.header__department {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.header__institute {
+  font-size: 18px;
+  font-style: italic;
+}
+
+.header__nasu {
+  font-size: 18px;
+  font-style: italic;
+}
+
+/* === NAV === */
+
+.nav {
+  margin: 10px 0;
+}
+
+/* === CONTENT === */
+
+.content {
+  font-size: 18px;
+  color: var(--color-text2);
+  letter-spacing: 0.1em;
+}
+
+/* === FOOTER === */
+.footer {
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
