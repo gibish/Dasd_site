@@ -46,7 +46,16 @@ body {
 /* === NAV === */
 
 .nav {
-  margin: 10px 0;
+  margin: 10px 0 20px 0;
+}
+
+.nav__inner {
+  display: flex;
+  justify-content: space-between;
+  border-top: #15232d solid 2px;
+  border-bottom: #15232d solid 2px;
+
+  padding: 5px 0;
 }
 
 /* === CONTENT === */
