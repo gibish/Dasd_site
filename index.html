@@ -12,14 +12,14 @@
     <header class="header">
       <div class="container">
         <div class="header__inner">
-          <div class="header__department">
+          <div class="header__department" data-lang="header-department">
             Data acquisition system department
           </div>
-          <div class="header__institute">
-            V.M. Glushkov Institute of Cybernetics
+          <div class="header__institute" data-lang="header-institute">
+            V.M. Glushkov's Institute of Cybernetics
           </div>
-          <div class="header__nasu">
-            of National Academy of Sciences of Ukraine
+          <div class="header__nasu" data-lang="header-nasu">
+            National Academy of Sciences of Ukraine
           </div>
         </div>
       </div>
@@ -37,8 +37,13 @@
             <a class="nav__item" href="#">Contacts</a>
           </div>
           <div class="nav__menu nav__lang">
-            <a class="nav__item" href="#">UA</a>
-            <a class="nav__item active" href="#">EN</a>
+            <!--            <a class="nav__item" href="#">UA</a>
+            <a class="nav__item active" href="#">EN</a>     -->
+
+            <button class="nav__item nav__item-btn" data-btn="ua">UA</button>
+            <button class="nav__item nav__item-btn active" data-btn="en">
+              EN
+            </button>
           </div>
         </div>
       </div>
@@ -148,5 +153,7 @@
         </div>
       </div>
     </footer>
+    <script src="./script.js"></script>
+    <script src="/lng/lng_main.js"></script>
   </body>
 </html>
