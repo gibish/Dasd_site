@@ -12,5 +12,3 @@ const mainText = {
     ua: "Національна академія наук України",
   },
 };
-
-currentText = mainText;
