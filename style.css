@@ -54,7 +54,7 @@ body {
 .nav {
   margin: 10px 0 10px 0;
   background-color: var(--color-bg2);
-  box-shadow: 1px 1px 2px black;
+  box-shadow: 1px 2px 4px black;
 }
 
 .nav__inner {
@@ -119,7 +119,17 @@ body {
 }
 
 .content__descr.first {
-  margin: 15px 0 25px 0;
+  margin: 15px 0 10px 0;
+  line-height: 1.4;
+}
+
+.content__site {
+  padding-left: 5px;
+  color: var(--color-text);
+}
+
+.content__site:hover {
+  text-decoration: underline;
 }
 
 .content__title {
@@ -131,7 +141,7 @@ body {
   background-color: var(--color-text2);
   padding: 5px 15px;
   border-radius: 5px;
-  margin: 10px 0;
+  margin: 20px 0 10px;
 }
 
 .content__projects {
@@ -172,7 +182,7 @@ body {
 
 .content__projects-link .content__projects-item-title:hover {
   color: var(--color-text-link);
-  text-shadow: 2px 2px 3px black;
+  text-shadow: 2px 2px 4px black;
 }
 
 .content__projects-item-descr {
