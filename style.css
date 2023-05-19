@@ -118,6 +118,7 @@ body {
   font-size: 16px;
   line-height: 1.2;
   margin-top: 15px;
+  text-align: justify;
 }
 
 .content__descr.first {
@@ -189,6 +190,7 @@ body {
 
 .content__projects-item-descr {
   font-size: 14px;
+  line-height: 1.2;
 }
 
 /* === FOOTER === */
