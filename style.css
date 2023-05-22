@@ -170,6 +170,11 @@ body {
   border-radius: 10px;
   top: -30px;
   left: 10px;
+  max-width: 130px;
+}
+
+.content__projects-item img:hover {
+  background: rgba(10, 10, 10, 0.1);
 }
 
 .content__projects-item-title {

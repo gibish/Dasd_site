@@ -91,6 +91,14 @@ const mainText = {
     en: "The main activity of the department is directed to the development of information technologies, wireless sensor networks, hardware-software means and devices of the Internet of Things for estimating the state of objects of different origins and implementation of developed technologies in various spheres of human activity and industry, in particular: agriculture, horticulture, environmental monitoring and protection, medicine, telemedicine and food industry.",
     ua: "Основну діяльність відділу направлено на розроблення інформаційних технологій, бездротових сенсорних мереж, програмно-апаратних засобів і пристроїв Інтернету речей для оцінювання стану об'єктів різного походження та впровадження розроблених технологій у різні сфери діяльності людини та галузі промисловості, зокрема: сільське господарство, садівництво, екологічний моніторинг, захист довкілля, медицину, телемедицину та харчову промисловість.",
   },
+  "footer-department": {
+    en: "Acquisition System Department of V.M.Glushkov's Institute of Cybernetics of NAS of Ukraine",
+    ua: "Відділ перетворювачів форми інформації Інституту кібернетики імені В.М. Глушкова НАН України",
+  },
+  "footer-created": {
+    en: "Created by",
+    ua: "Створено",
+  },
 };
 
 /*
