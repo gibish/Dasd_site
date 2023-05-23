@@ -25,7 +25,8 @@ body {
 /* === HEADER === */
 
 .header {
-  margin: 15px 0;
+  padding: 15px 0;
+  background: no-repeat center/cover url(/img/bg.jpg);
 }
 
 .header__inner {
@@ -33,6 +34,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.2em;
   line-height: 1.2;
+  text-shadow: 2px 2px 5px black;
 }
 
 .header__department {
@@ -53,7 +55,7 @@ body {
 /* === NAV === */
 
 .nav {
-  margin: 10px 0 10px 0;
+  margin: 0 0 10px 0;
   background-color: var(--color-bg2);
   box-shadow: 1px 2px 4px black;
 }
@@ -165,21 +167,35 @@ body {
   margin: 35px 0 0 0;
 }
 
-.content__projects-item img {
+.content__projects-item-img {
+  display: flex;
   position: absolute;
   border-radius: 10px;
   top: -30px;
   left: 10px;
-  max-width: 130px;
+  height: 180px;
+  width: 140px;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-bg);
+  border: 1px dotted var(--color-text);
+  z-index: 10;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 1);
 }
 
-.content__projects-item img:hover {
-  background: rgba(10, 10, 10, 0.1);
+.content__projects-item img {
+  object-fit: cover;
+  max-height: 180px;
+  max-width: 140px;
+}
+
+.content__projects-item-img:hover {
+  background-color: var(--color-bg3);
 }
 
 .content__projects-item-title {
   margin-left: 140px;
-  min-height: 130px;
+  min-height: 155px;
   padding-top: 15px;
   color: var(--color-text);
   font-size: 18px;
