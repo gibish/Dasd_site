@@ -25,8 +25,10 @@ body {
 /* === HEADER === */
 
 .header {
-  padding: 15px 0;
-  background: no-repeat center/cover url(/img/bg.jpg);
+  padding: 25px 0;
+  background-color: var(--color-bg);
+  background: no-repeat center / cover url(/img/bg.jpg);
+  background-blend-mode: multiply;
 }
 
 .header__inner {
@@ -34,21 +36,23 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.2em;
   line-height: 1.2;
-  text-shadow: 2px 2px 5px black;
+  text-shadow: 3px 3px 5px black;
+  color: var(--color-text);
 }
 
 .header__department {
-  font-size: 32px;
+  font-size: 36px;
   margin-bottom: 10px;
+  font-weight: bold;
 }
 
 .header__institute {
-  font-size: 18px;
+  font-size: 24px;
   font-style: italic;
 }
 
 .header__nasu {
-  font-size: 18px;
+  font-size: 24px;
   font-style: italic;
 }
 
@@ -143,10 +147,12 @@ body {
   color: var(--color-bg2);
   font-style: italic;
   font-weight: bold;
-  background-color: var(--color-text2);
+  /*  background-color: var(--color-text2); */
+  background-color: rgba(141, 138, 138, 0.7);
   padding: 5px 15px;
   border-radius: 5px;
   margin: 20px 0 10px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .content__projects {
@@ -161,9 +167,9 @@ body {
   position: relative;
   width: 32%;
   min-height: 250px;
-  border-radius: 5px;
+  border-radius: 8px;
   padding: 10px 15px;
-  border: 1px dotted var(--color-text);
+  border: 1px solid var(--color-text);
   margin: 35px 0 0 0;
 }
 
@@ -178,7 +184,7 @@ body {
   align-items: center;
   justify-content: center;
   background-color: var(--color-bg);
-  border: 1px dotted var(--color-text);
+  border: 1px solid var(--color-text);
   z-index: 10;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 1);
 }
