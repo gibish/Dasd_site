@@ -374,7 +374,18 @@ body {
 
 @media (max-width: 800px) {
   .nav__menu-hidden {
-    display: none;
+    /* display: none; */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-bg2);
+    flex-direction: column;
+  }
+
+  .nav__menu-hidden .nav__item {
+    margin: 0;
+    padding: 8px 20px;
   }
 
   .nav__inner {
