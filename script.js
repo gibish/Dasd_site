@@ -1,6 +1,5 @@
 const allLangs = ["en", "ua"];
-let currentLang =
-  localStorage.getItem("language") || checkBrowserLang() || "en";
+let currentLang = localStorage.getItem("language") || checkBrowserLang() || "en";
 const langButtons = document.querySelectorAll("[data-btn]");
 const currentPathName = window.Location.currentPathName;
 let currentText = {};
@@ -73,3 +72,10 @@ function checkBrowserLang() {
     return navLang;
   }
 }
+
+const header = document.getElementById("header");
+
+window.addEventListener("scroll", () => {
+  let headerH = header.clientHeight;
+  console.log(headerH);
+});
