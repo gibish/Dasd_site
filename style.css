@@ -31,9 +31,21 @@ body {
   background-color: var(--color-bg);
   background: no-repeat center / cover url(/img/bg.jpg);
   background-blend-mode: multiply;
+  position: relative;
+}
+
+.header__bgc {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 4, 36, 0.6);
+  z-index: 0;
 }
 
 .header__inner {
+  position: relative;
   padding-bottom: 15px;
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -148,6 +160,10 @@ body {
   color: transparent;
 
   display: none;
+}
+
+.nav-toggle:focus {
+  outline: 0;
 }
 
 .nav-toggle__item {
@@ -401,6 +417,10 @@ body {
     width: 100%;
     background-color: var(--color-bg2);
     flex-direction: column;
+  }
+
+  .nav__menu-active {
+    display: flex;
   }
 
   .nav__menu-hidden .nav__item {

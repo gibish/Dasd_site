@@ -74,8 +74,30 @@ function checkBrowserLang() {
 }
 
 const header = document.getElementById("header");
+const nav = document.getElementById("nav");
+let headerH = header.clientHeight;
+let scrollOffset = window.scrollY;
+
+checkScroll(scrollOffset);
 
 window.addEventListener("scroll", () => {
-  let headerH = header.clientHeight;
-  console.log(headerH);
+  scrollOffset = window.scrollY;
+  checkScroll(scrollOffset);
+});
+
+function checkScroll(scrollOffset) {
+  if (scrollOffset >= headerH) {
+    nav.classList.add("nav--fixed");
+  } else {
+    nav.classList.remove("nav--fixed");
+  }
+}
+
+const navToggle = document.getElementById("nav_toggle");
+const navMenu = document.getElementById("nav_menu");
+
+navToggle.addEventListener("click", (event) => {
+  event.preventDefault();
+  navMenu.classList.toggle("nav__menu-active");
+  navToggle.classList.toggle("active");
 });

@@ -10,6 +10,7 @@
   </head>
   <body>
     <header class="header" id="header">
+      <div class="header__bgc"></div>
       <div class="container">
         <div class="header__inner">
           <div class="header__department" data-lang="header-department">Data acquisition system department</div>
@@ -21,7 +22,7 @@
     <nav class="nav" id="nav">
       <div class="container">
         <div class="nav__inner">
-          <div class="nav__menu nav__menu-hidden">
+          <div class="nav__menu nav__menu-hidden" id="nav_menu">
             <a class="nav__item active" data-lang="nav-main" href="#">Main</a>
             <a class="nav__item" data-lang="nav-department" href="#">About department</a>
             <a class="nav__item" data-lang="nav-institute" href="#">About institute</a>
@@ -39,7 +40,7 @@
             <button class="nav__item nav__item-btn" data-btn="en">EN</button>
           </div>
 
-          <button class="nav-toggle active" type="button">
+          <button class="nav-toggle" id="nav_toggle" type="button">
             <span class="nav-toggle__item">Menu</span>
           </button>
         </div>
