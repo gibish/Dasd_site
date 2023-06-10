@@ -52,8 +52,8 @@ const mainText = {
     ua: "Більше інформації про наш Інститут можна знайти на",
   },
   "content-nasu": {
-    en: "More information about National Academy of sciences of Ukraine can be found at",
-    ua: "Більше інформації про Національну академію наук України можна знайти на",
+    en: "More information about National Academy of sciences of Ukraine can be found at ",
+    ua: "Більше інформації про Національну академію наук України можна знайти на ",
   },
   "content-recent-projects": {
     en: "Recent projects",

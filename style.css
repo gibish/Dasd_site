@@ -135,7 +135,8 @@ body {
 }
 
 .nav__item:hover {
-  color: var(--color-link);
+  /* color: var(--color-link); */
+  color: #88881b;
 }
 
 .nav__item.active {
@@ -253,11 +254,13 @@ body {
 .content__title {
   display: inline-flex;
   font-size: 22px;
-  color: var(--color-bg2);
+  /* color: var(--color-bg2); */
+
   font-style: italic;
   font-weight: bold;
   /*  background-color: var(--color-text2); */
-  background-color: rgba(141, 138, 138, 0.7);
+  /* background-color: rgba(141, 138, 138, 0.7); */
+  border: 1px solid rgba(141, 138, 138, 0.7);
   padding: 5px 15px;
   border-radius: 5px;
   margin: 20px 0 10px;
@@ -409,6 +412,18 @@ body {
 }
 
 @media (max-width: 800px) {
+  .header__department {
+    font-size: 24px;
+  }
+
+  .header__institute {
+    font-size: 16px;
+  }
+
+  .header__nasu {
+    font-size: 16px;
+  }
+
   .nav__menu-hidden {
     display: none;
     position: absolute;
@@ -442,5 +457,28 @@ body {
 
   .content__projects-item {
     width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .header__department {
+    font-size: 18px;
+  }
+
+  .header__institute {
+    font-size: 12px;
+  }
+
+  .header__nasu {
+    font-size: 12px;
+  }
+
+  .content__title {
+    font-size: 16px;
+  }
+
+  .content__descr {
+    font-size: 12px;
+    text-align: left;
   }
 }
