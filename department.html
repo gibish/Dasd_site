@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./_null.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>DAS Department</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="header__bgc"></div>
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__department" data-lang="header-department">Data acquisition system department</div>
+          <div class="header__institute" data-lang="header-institute">V.M.Glushkov's Institute of Cybernetics</div>
+          <div class="header__nasu" data-lang="header-nasu">National Academy of Sciences of Ukraine</div>
+        </div>
+      </div>
+    </header>
+    <nav class="nav" id="nav">
+      <div class="container">
+        <div class="nav__inner">
+          <div class="nav__menu nav__menu-hidden" id="nav_menu">
+            <a class="nav__item" data-lang="nav-main" href="index.html">Main</a>
+            <a class="nav__item active" data-lang="nav-department" href="#">About department</a>
+            <a class="nav__item" data-lang="nav-institute" href="#">About institute</a>
+            <a class="nav__item" data-lang="nav-projects" href="#">Projects</a>
+            <a class="nav__item" data-lang="nav-staff" href="#">Staff</a>
+            <a class="nav__item" data-lang="nav-publications" href="#">Publications</a>
+            <a class="nav__item" data-lang="nav-contacts" href="#">Contacts</a>
+          </div>
+
+          <div class="nav__menu nav__lang">
+            <!--            <a class="nav__item" href="#">UA</a>
+            <a class="nav__item active" href="#">EN</a>     -->
+
+            <button class="nav__item nav__item-btn" data-btn="ua">UA</button>
+            <button class="nav__item nav__item-btn" data-btn="en">EN</button>
+          </div>
+
+          <button class="nav-toggle" id="nav_toggle" type="button">
+            <span class="nav-toggle__item">Menu</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div class="content">
+      <div class="container">
+        <div class="content__inner">
+          <div class="content__title" data-lang="content-welcome">Welcome to Site</div>
+          <div class="content__descr first">
+            <p data-lang="content-welcome1">
+              Welcome to the website of Data Acquisition System Department of V.M.Glushkov's Institute of Cybernetics of
+              NAS of Ukraine.
+            </p>
+          </div>
+          <div class="content__descr" data-lang="content-brief-descr">
+            The main activity of the department is directed to the development of information technologies, wireless
+            sensor networks, hardware-software means and devices of the Internet of Things for estimating the state of
+            objects of different origins and implementation of developed technologies in various spheres of human
+            activity and industry, in particular: agriculture, horticulture, environmental monitoring and protection,
+            medicine, telemedicine and food industry.
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__copyright">
+            © 2023,
+            <span data-lang="footer-department">
+              Acquisition System Department of V.M.Glushkov's Institute of Cybernetics of NAS of Ukraine</span
+            >
+          </div>
+          <div class="footer__developer"><span data-lang="footer-created">Created by</span> Gibish</div>
+        </div>
+      </div>
+    </footer>
+    <script src="/lng/lng_header.js"></script>
+    <script src="/lng/lng_department.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

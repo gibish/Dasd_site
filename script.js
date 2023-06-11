@@ -1,21 +1,23 @@
 const allLangs = ["en", "ua"];
 let currentLang = localStorage.getItem("language") || checkBrowserLang() || "en";
 const langButtons = document.querySelectorAll("[data-btn]");
-const currentPathName = window.Location.currentPathName;
+const currentPathName = window.location.pathname;
 let currentText = {};
 
 function checkPagePathName() {
+  currentText = headerText;
   switch (currentPathName) {
     case "/index.html":
-      currentText = mainText;
+      currentText = Object.assign(currentText, mainText);
+      break;
+    case "/department.html":
+      currentText = Object.assign(currentText, departmentText);
       break;
     default:
-      currentText = mainText;
+      currentText = headerText;
       break;
   }
 }
-
-console.log(currentText);
 
 checkPagePathName();
 

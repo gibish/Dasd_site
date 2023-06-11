@@ -1,4 +1,44 @@
 const mainText = {
+  "header-department": {
+    en: "Data acquisition system department",
+    ua: "Відділ перетворювачів форми інформації",
+  },
+  "header-institute": {
+    en: "V.M.Glushkov's Institute of Cybernetics",
+    ua: "Інститут кібернтики імені В.М.Глушкова",
+  },
+  "header-nasu": {
+    en: "National Academy of Sciences of Ukraine",
+    ua: "Національна академія наук України",
+  },
+  "nav-main": {
+    en: "Main",
+    ua: "Головна",
+  },
+  "nav-department": {
+    en: "About department",
+    ua: "Про відділ",
+  },
+  "nav-institute": {
+    en: "About institute",
+    ua: "Про інститут",
+  },
+  "nav-projects": {
+    en: "Projects",
+    ua: "Проекти",
+  },
+  "nav-staff": {
+    en: "Staff",
+    ua: "Співробітники",
+  },
+  "nav-publications": {
+    en: "Publications",
+    ua: "Публікації",
+  },
+  "nav-contacts": {
+    en: "Contacts",
+    ua: "Контакти",
+  },
   "content-welcome": {
     en: "Welcome to Site",
     ua: "Вітаємо на сайті",
@@ -50,6 +90,14 @@ const mainText = {
   "content-brief-descr": {
     en: "The main activity of the department is directed to the development of information technologies, wireless sensor networks, hardware-software means and devices of the Internet of Things for estimating the state of objects of different origins and implementation of developed technologies in various spheres of human activity and industry, in particular: agriculture, horticulture, environmental monitoring and protection, medicine, telemedicine and food industry.",
     ua: "Основну діяльність відділу направлено на розроблення інформаційних технологій, бездротових сенсорних мереж, програмно-апаратних засобів і пристроїв Інтернету речей для оцінювання стану об'єктів різного походження та впровадження розроблених технологій у різні сфери діяльності людини та галузі промисловості, зокрема: сільське господарство, садівництво, екологічний моніторинг, захист довкілля, медицину, телемедицину та харчову промисловість.",
+  },
+  "footer-department": {
+    en: "Acquisition System Department of V.M.Glushkov's Institute of Cybernetics of NAS of Ukraine",
+    ua: "Відділ перетворювачів форми інформації Інституту кібернетики імені В.М.Глушкова НАН України",
+  },
+  "footer-created": {
+    en: "Created by",
+    ua: "Створено",
   },
 };
 
