@@ -231,19 +231,42 @@ body {
   padding: 0;
 }
 
-.content__descr {
+.content__descr,
+.content__descr-ul {
   font-size: 16px;
   line-height: 1.2;
   margin-top: 15px;
   text-align: justify;
 }
 
+.content__descr-ul,
+.content__descr-ul li {
+  padding-left: 1.5em;
+  list-style-type: circle;
+  list-style-position: outside;
+}
+
+.content__descr.subhead {
+  text-transform: uppercase;
+}
+
+.content__descr-span {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.6em;
+  line-height: 1.4;
+}
+
 .content__descr-img {
   display: flex;
+  align-items: center;
 }
 
 .content__img {
-  margin: 15px 15px 15px 0;
+  margin: 15px 15px 0 0;
+  max-width: 200px;
+  object-fit: cover;
+  align-items: center;
 }
 
 .content__descr.first {
