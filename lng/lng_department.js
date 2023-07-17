@@ -73,7 +73,7 @@ const departmentText = {
   },
   "dept-content-5": {
     en: "Some applied results",
-    ua: "Деякі прикладні результати",
+    ua: "Деякі прикладні результати:",
   },
 };
 
