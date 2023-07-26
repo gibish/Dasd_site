@@ -269,6 +269,7 @@ body {
   max-width: 200px;
   object-fit: cover;
   align-items: center;
+  border-radius: 10px;
 }
 
 .content__descr.first {
