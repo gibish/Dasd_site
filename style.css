@@ -231,6 +231,15 @@ body {
   padding: 0;
 }
 
+.content__inner a {
+  display: block;
+  color: inherit;
+}
+
+.content__inner a:hover {
+  color: var(--color-link);
+}
+
 .content__descr,
 .content__descr-ul {
   font-size: 16px;
@@ -254,6 +263,10 @@ body {
 
 .content__descr.under {
   text-decoration: underline;
+}
+
+.content__descr.vidstup {
+  padding-left: 20px;
 }
 
 .content__descr-span {

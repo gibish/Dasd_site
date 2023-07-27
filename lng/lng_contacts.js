@@ -43,6 +43,10 @@ const contactsText = {
     en: "VRomanov@i.ua",
     ua: "VRomanov@i.ua",
   },
+  "cont-content-11": {
+    en: "Map:",
+    ua: "Карта:",
+  },
 };
 
 /*
