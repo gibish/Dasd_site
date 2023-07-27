@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./_null.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>DAS Department</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="header__bgc"></div>
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__department" data-lang="header-department">Data acquisition system department</div>
+          <div class="header__institute" data-lang="header-institute">V.M.Glushkov's Institute of Cybernetics</div>
+          <div class="header__nasu" data-lang="header-nasu">National Academy of Sciences of Ukraine</div>
+        </div>
+      </div>
+    </header>
+    <nav class="nav" id="nav">
+      <div class="container">
+        <div class="nav__inner">
+          <div class="nav__menu nav__menu-hidden" id="nav_menu">
+            <a class="nav__item" data-lang="nav-main" href="index.html">Main</a>
+            <a class="nav__item" data-lang="nav-department" href="department.html">About department</a>
+            <a class="nav__item" data-lang="nav-institute" href="institute.html">About institute</a>
+            <a class="nav__item" data-lang="nav-projects" href="_wbs.html">Projects</a>
+            <a class="nav__item" data-lang="nav-staff" href="_wbs.html">Staff</a>
+            <a class="nav__item" data-lang="nav-publications" href="_wbs.html">Publications</a>
+            <a class="nav__item active" data-lang="nav-contacts" href="contacts.html">Contacts</a>
+          </div>
+
+          <div class="nav__menu nav__lang">
+            <!--            <a class="nav__item" href="#">UA</a>
+            <a class="nav__item active" href="#">EN</a>     -->
+
+            <button class="nav__item nav__item-btn" data-btn="ua">UA</button>
+            <button class="nav__item nav__item-btn" data-btn="en">EN</button>
+          </div>
+
+          <button class="nav-toggle" id="nav_toggle" type="button">
+            <span class="nav-toggle__item">Menu</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div class="content">
+      <div class="container">
+        <div class="content__inner">
+          <div class="content__title" data-lang="cont-content-welcome">Contacts</div>
+          <div class="content__descr subhead under" data-lang="cont-content-1">Mailing address:</div>
+          <div class="content__descr" data-lang="cont-content-2">
+            Ukraine, 03187, Kiev, prospekt Akademika Glushkova, 40
+          </div>
+          <div class="content__descr" data-lang="cont-content-3">
+            V.M. Glushkov's Institute of Cybernetics of National Academy od Sciences of Ukraine
+          </div>
+          <div class="content__descr" data-lang="cont-content-4">Data-acquisition system department</div>
+          <div class="content__descr subhead under" data-lang="cont-content-5">Head of Department:</div>
+          <div class="content__descr" data-lang="cont-content-6">
+            Romanov Volodymyr Oleksandrovych, doctor of sciences, professor
+          </div>
+          <div class="content__descr subhead under" data-lang="cont-content-7">Tel./Fax:</div>
+          <div class="content__descr" data-lang="cont-content-8">+38 (044) 526-32-04</div>
+          <div class="content__descr subhead under" data-lang="cont-content-9">E-mail:</div>
+          <a class="content__descr" data-lang="cont-content-10" href="mailto:VRomanov@i.ua">VRomanov@i.ua</a>
+        </div>
+        <!-- END OF Content inner-->
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__copyright">
+            © 2023,
+            <span data-lang="footer-department">
+              Acquisition System Department of V.M.Glushkov's Institute of Cybernetics of NAS of Ukraine</span
+            >
+          </div>
+          <div class="footer__developer"><span data-lang="footer-created">Created by</span> Gibish</div>
+        </div>
+      </div>
+    </footer>
+    <script src="/lng/lng_header.js"></script>
+    <script src="/lng/lng_contacts.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

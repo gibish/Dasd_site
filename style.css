@@ -252,6 +252,10 @@ body {
   text-transform: uppercase;
 }
 
+.content__descr.under {
+  text-decoration: underline;
+}
+
 .content__descr-span {
   display: block;
   width: 100%;
@@ -371,7 +375,8 @@ body {
 .footer {
   margin-top: 25px;
   background-color: var(--color-bg2);
-  box-shadow: 1px -2px 4px black;
+  /*box-shadow: 1px -2px 4px black;*/
+  border-top: 1px solid #808000;
 }
 
 .footer__inner {

@@ -1,8 +1,4 @@
 const departmentText = {
-  "header-department": {
-    en: "Data acquisition system department",
-    ua: "Відділ перетворювачів форми інформації",
-  },
   "dept-content-welcome": {
     en: "About Data Acquisition System Department",
     ua: "Про відділ перетворювачів форми інформації",
