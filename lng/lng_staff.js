@@ -123,6 +123,86 @@ const staffText = {
     en: "Research fellow",
     ua: "Науковий співробітник",
   },
+  "ant-name": {
+    en: "Ganna ANTONOVA",
+    ua: "АНТОНОВА Ганна Валеріївна",
+  },
+  "ant-position": {
+    en: "Junior research fellow",
+    ua: "Молодший науковий співробітник",
+  },
+  "bed-name": {
+    en: "Tetyana BEDNENKO",
+    ua: "БЕДНЕНКО Тетяна Василівна",
+  },
+  "bed-position": {
+    en: "Junior research fellow",
+    ua: "Молодший науковий співробітник",
+  },
+  "vor-name": {
+    en: "Oleksandr VORONENKO",
+    ua: "ВОРОНЕНКО Олександр Володимирович",
+  },
+  "vor-position": {
+    en: "Junior research fellow",
+    ua: "Молодший науковий співробітник",
+  },
+  "ked-name": {
+    en: "Anna KEDYCH",
+    ua: "КЕДИЧ Анна Василівна",
+  },
+  "ked-position": {
+    en: "Junior research fellow",
+    ua: "Молодший науковий співробітник",
+  },
+  "kov-name": {
+    en: "Oleksandra KOVYROVA",
+    ua: "КОВИРЬОВА Олександра Валеріївна",
+  },
+  "kov-position": {
+    en: "Junior research fellow",
+    ua: "Молодший науковий співробітник",
+  },
+  "ima-name": {
+    en: "Roza IMAMUTDINOVA",
+    ua: "ІМАМУТДІНОВА Роза Гільмутдіновна",
+  },
+  "ima-position": {
+    en: "Leading software engineer",
+    ua: "Провідний інженер-програміст",
+  },
+  "pod-name": {
+    en: "Valentyn PODHAPOV",
+    ua: "ПОДХАПОВ Валентин Сергійович",
+  },
+  "pod-position": {
+    en: "Leading engineer",
+    ua: "Провідний інженер",
+  },
+  "sav-name": {
+    en: "Viktor SAVCHENKO",
+    ua: "САВЧЕНКО Віктор Васильович",
+  },
+  "sav-position": {
+    en: "Leading engineer",
+    ua: "Провідний інженер",
+  },
+  "ran-name": {
+    en: "Olga RANDYUK",
+    ua: "РАНДЮК Ольга Степанівна",
+  },
+  "ran-position": {
+    en: "Engineer",
+    ua: "Інженер",
+  },
+  "sht-name": {
+    en: "Valentyna SHTEFANYUK",
+    ua: "ШТЕФАНЮК Валентина Григорівна",
+  },
+  "sht-position": {
+    en: "Engineer",
+    ua: "Інженер",
+  },
 };
 
 /*
