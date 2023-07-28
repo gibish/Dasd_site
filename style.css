@@ -276,6 +276,11 @@ body {
   line-height: 1.4;
 }
 
+.span-name {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
 .content__descr-img {
   display: flex;
   align-items: center;
@@ -287,6 +292,11 @@ body {
   object-fit: cover;
   align-items: center;
   border-radius: 10px;
+}
+
+.content__img-staff {
+  max-width: 150px;
+  border-radius: 15%;
 }
 
 .content__descr.first {
