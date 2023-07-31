@@ -22,6 +22,9 @@ function checkPagePathName() {
     case "/staff.html":
       currentText = Object.assign(currentText, staffText);
       break;
+    case "/projects.html":
+      currentText = Object.assign(currentText, projectsText);
+      break;
     case "/_wbs.html":
       currentText = Object.assign(currentText, wbsText);
       break;
