@@ -115,14 +115,6 @@ const staffText = {
     en: "Research fellow",
     ua: "Науковий співробітник",
   },
-  "lav-name": {
-    en: "Vasyl LAVRENTYEV",
-    ua: "ЛАВРЕТЬЄВ Василь Миколайович",
-  },
-  "lav-position": {
-    en: "Research fellow",
-    ua: "Науковий співробітник",
-  },
   "ant-name": {
     en: "Ganna ANTONOVA",
     ua: "АНТОНОВА Ганна Валеріївна",
