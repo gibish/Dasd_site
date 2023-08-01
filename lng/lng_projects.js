@@ -3,17 +3,17 @@ const projectsText = {
     en: "Latest projects",
     ua: "Останні проекти",
   },
-  "rom-name": {
-    en: "Volodymyr ROMANOV",
-    ua: "РОМАНОВ Володимир Олександрович",
+  "proj-name": {
+    en: "Portbale device 'FLORATEST'",
+    ua: "Портативний прилад 'ФЛОРАТЕСТ'",
   },
-  "rom-position": {
+  "proj-descr": {
     en: "Head of department",
     ua: "Завідувач відділу",
   },
-  "rom-degree": {
-    en: "Doctor of technical sciences, Professor",
-    ua: "Доктор технічних наук, професор",
+  "proj-detail": {
+    en: "More detailed about project",
+    ua: "Детальніше про проект",
   },
 };
 
