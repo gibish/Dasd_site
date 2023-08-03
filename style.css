@@ -297,6 +297,25 @@ body {
   width: 49%;
 }
 
+.content__descr-img-ref {
+  align-items: center;
+  justify-content: center;
+  max-height: 35px;
+  padding: 4px 5px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+}
+
+.content__descr-img-ref.scopus {
+  padding-top: 7px;
+  padding-bottom: 1px;
+}
+
+.content__descr-img-ref:hover {
+  background-color: var(--color-bg3);
+  border-color: var(--color-link);
+}
+
 .content__img {
   margin: 15px 15px 0 0;
   max-height: 250px;
