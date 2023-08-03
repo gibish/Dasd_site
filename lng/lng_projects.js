@@ -4,7 +4,7 @@ const projectsText = {
     ua: "Останні проекти",
   },
   "proj-name": {
-    en: "Portbale device 'FLORATEST'",
+    en: "Portable device 'FLORATEST'",
     ua: "Портативний прилад 'ФЛОРАТЕСТ'",
   },
   "proj-descr": {

@@ -281,6 +281,7 @@ body {
   width: 100%;
   margin-bottom: 0.6em;
   line-height: 1.4;
+  text-align: left;
 }
 
 .span-name {

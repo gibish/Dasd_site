@@ -53,7 +53,7 @@ const staffText = {
   },
   "che-name": {
     en: "Anatoliy CHEBOTAREV",
-    ua: "ЧУБОТАРЬОВ Анатолій Миколайович",
+    ua: "ЧЕБОТАРЬОВ Анатолій Миколайович",
   },
   "che-position": {
     en: "Leading research fellow",
