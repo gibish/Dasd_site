@@ -284,6 +284,11 @@ body {
   text-align: left;
 }
 
+.content__descr--head {
+  color: var(--color-text-link);
+  text-transform: uppercase;
+}
+
 .span-name {
   font-size: 1.2em;
   font-weight: bold;
@@ -328,6 +333,13 @@ body {
 .content__img-staff {
   max-width: 150px;
   border-radius: 15%;
+}
+
+.content__img-proj {
+  max-width: 200px;
+  max-height: fit-content;
+  border-radius: 5%;
+  padding-right: 20px;
 }
 
 .content__descr.first {
@@ -419,6 +431,10 @@ body {
   line-height: 1.4;
   text-transform: uppercase;
   text-align: center;
+}
+
+.content__projects-link {
+  color: inherit;
 }
 
 .content__projects-link .content__projects-item-title:hover {
