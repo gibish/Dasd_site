@@ -289,10 +289,6 @@ body {
   text-transform: uppercase;
 }
 
-.content--justify {
-  text-align: justify;
-}
-
 .content--dotted-bottom {
   border-bottom: yellow dotted 1px;
 }
@@ -466,6 +462,18 @@ body {
 .content__projects-item-descr {
   font-size: 14px;
   line-height: 1.2;
+}
+
+.content--justify {
+  text-align: justify;
+}
+
+.content--top {
+  align-items: start;
+}
+
+.content--subhead {
+  text-transform: uppercase;
 }
 
 /* === FOOTER === */
