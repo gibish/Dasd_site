@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./_null.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>DAS Department</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="header__bgc"></div>
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__department" data-lang="header-department">Data acquisition system department</div>
+          <div class="header__institute" data-lang="header-institute">V.M.Glushkov's Institute of Cybernetics</div>
+          <div class="header__nasu" data-lang="header-nasu">National Academy of Sciences of Ukraine</div>
+        </div>
+      </div>
+    </header>
+    <nav class="nav" id="nav">
+      <div class="container">
+        <div class="nav__inner">
+          <div class="nav__menu nav__menu-hidden" id="nav_menu">
+            <a class="nav__item" data-lang="nav-main" href="index.html">Main</a>
+            <a class="nav__item" data-lang="nav-department" href="department.html">About department</a>
+            <a class="nav__item" data-lang="nav-institute" href="institute.html">About institute</a>
+            <a class="nav__item active" data-lang="nav-projects" href="projects.html">Projects</a>
+            <a class="nav__item" data-lang="nav-staff" href="staff.html">Staff</a>
+            <a class="nav__item" data-lang="nav-publications" href="_wbs.html">Publications</a>
+            <a class="nav__item" data-lang="nav-contacts" href="contacts.html">Contacts</a>
+          </div>
+
+          <div class="nav__menu nav__lang">
+            <!--            <a class="nav__item" href="#">UA</a>
+            <a class="nav__item active" href="#">EN</a>     -->
+
+            <button class="nav__item nav__item-btn" data-btn="ua">UA</button>
+            <button class="nav__item nav__item-btn" data-btn="en">EN</button>
+          </div>
+
+          <button class="nav-toggle" id="nav_toggle" type="button">
+            <span class="nav-toggle__item">Menu</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div class="content">
+      <div class="container">
+        <div class="content__inner">
+          <div class="content__title" data-lang="proj02-content-welcome">Wireless Sensor Network for Agriculture</div>
+          <!-- Project Floratest-->
+          <div class="content__descr-img content--top">
+            <img
+              class="content__img content__img-proj-big content--bg-white"
+              src="./img/Network_big.gif"
+              alt="WSN (photo)"
+            />
+            <div class="content__descr">
+              <span class="content__descr-span content--justify" data-lang="proj02-descr-1"
+                >In agriculture, ecological monitoring and medicine it is very important to obtain data of the real-time
+                influence of stress factors of natural or anthropogenic origin on the state of biological objects (e.g.
+                plants, humans etc.). For this purposes special means are used in modern industrial agriculture,
+                environmental monitoring, medicine and military applications. The applications of modern achievements in
+                microelectronics, biosensors, and communications and information technologies make it possible to solve
+                this rather complicated problem of real-time monitoring of state of lots of biological objects. The most
+                perspective technology for realization of data acquisition and processing systems is wireless sensor
+                network.</span
+              >
+              <span class="content__descr-span content--justify" data-lang="proj02-descr-2"
+                >A node of wireless sensor network – remote smart wireless biosensors with embedded sensors and radio
+                transceiver for express estimation of plant state for precision farming. Node features: long-term
+                autonomous work, reliability of data sending and receiving, a large communication range, small size and
+                weight, stability to climate influence.</span
+              >
+            </div>
+          </div>
+          <div class="content__descr" data-lang="proj02-descr-3">
+            Organization of data acquisition of state of biological objects is performed via self-organization of
+            wireless nodes with different sets of sensing units in wireless sensor network, which can covers a large
+            territory.
+          </div>
+          <div class="content__descr" data-lang="proj03-descr-4">
+            Data acquisition can be performed by mobile unmanned platform, namely multicopter. In this mode, the mobile
+            unmanned platform is equipped with flash-memory with wireless communication unit.
+          </div>
+          <div class="content__descr" data-lang="proj04-descr-5">
+            Implementation of proposed wireless sensor network into industrial agriculture, ecological monitoring and
+            medicine makes it possible to increase efficiency and quality of agricultural products, spare fertilizers,
+            water and energy resources, timely protect agricultural plants, woodlands and parklands from infections and
+            anthropogenic impacts, obtain real-time information about human state including estimating physiological
+            parameters of human in extreme conditions.
+          </div>
+
+          <div class="content__descr content--subhead" data-lang="proj02-descr-6">Main developer:</div>
+          <div class="content__descr" data-lang="proj02-descr-6-1">Volodymyr ROMANOV</div>
+        </div>
+        <!-- END OF Content inner-->
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__copyright">
+            © 2023,
+            <span data-lang="footer-department">
+              Acquisition System Department of V.M.Glushkov's Institute of Cybernetics of NAS of Ukraine</span
+            >
+          </div>
+          <div class="footer__developer"><span data-lang="footer-created">Created by</span> Gibish</div>
+        </div>
+      </div>
+    </footer>
+    <script src="/lng/lng_header.js"></script>
+    <script src="/lng/lng_project02.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
