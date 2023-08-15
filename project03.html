@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./_null.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>DAS Department</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="header__bgc"></div>
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__department" data-lang="header-department">Data acquisition system department</div>
+          <div class="header__institute" data-lang="header-institute">V.M.Glushkov's Institute of Cybernetics</div>
+          <div class="header__nasu" data-lang="header-nasu">National Academy of Sciences of Ukraine</div>
+        </div>
+      </div>
+    </header>
+    <nav class="nav" id="nav">
+      <div class="container">
+        <div class="nav__inner">
+          <div class="nav__menu nav__menu-hidden" id="nav_menu">
+            <a class="nav__item" data-lang="nav-main" href="index.html">Main</a>
+            <a class="nav__item" data-lang="nav-department" href="department.html">About department</a>
+            <a class="nav__item" data-lang="nav-institute" href="institute.html">About institute</a>
+            <a class="nav__item active" data-lang="nav-projects" href="projects.html">Projects</a>
+            <a class="nav__item" data-lang="nav-staff" href="staff.html">Staff</a>
+            <a class="nav__item" data-lang="nav-publications" href="publications.html">Publications</a>
+            <a class="nav__item" data-lang="nav-contacts" href="contacts.html">Contacts</a>
+          </div>
+
+          <div class="nav__menu nav__lang">
+            <!--            <a class="nav__item" href="#">UA</a>
+            <a class="nav__item active" href="#">EN</a>     -->
+
+            <button class="nav__item nav__item-btn" data-btn="ua">UA</button>
+            <button class="nav__item nav__item-btn" data-btn="en">EN</button>
+          </div>
+
+          <button class="nav-toggle" id="nav_toggle" type="button">
+            <span class="nav-toggle__item">Menu</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div class="content">
+      <div class="container">
+        <div class="content__inner">
+          <div class="content__title" data-lang="proj03-content-welcome">Information Communicator for Medicine</div>
+          <!-- Project Floratest-->
+          <div class="content__descr-img column content--top">
+            <div class="content--center">
+              <img
+                class="content__img content__img-proj-big content--bg-white"
+                src="./img/Communicator_big.gif"
+                alt="Medical communicator (photo)"
+              />
+            </div>
+            <div class="content__descr">
+              <span class="content__descr-span content--justify" data-lang="proj03-descr-1"
+                >Mutual understanding and communication between doctors and patients is a very important problem as in
+                medicine, so in telemedicine. Ability of correct communication and mutual understanding during the
+                disease or separate stage of disease helps to diagnose, prognose a clinical behaviour, and accelerate
+                the recovery.</span
+              >
+              <span class="content__descr-span content--justify" data-lang="proj03-descr-2"
+                >Communication problems between a doctor and a patient influence correctness of the diagnoses and
+                quality of a doctor aid, and complicate the medical treatment.</span
+              >
+              <span class="content__descr-span content--justify" data-lang="proj03-descr-3"
+                >It is proposed to apply special hardware-software means, particularly information communicators to
+                simplify the communication of doctors with patients (particularly with voice limitation) and increase
+                treatment efficiency beginning from the first contact.</span
+              >
+              <span class="content__descr-span content--justify" data-lang="proj03-descr-4"
+                >Special application-dependent software consists of two subsystems. The first subsystem is used for the
+                first contact of a doctor and a patient. The second subsystem is used for alternative communication of
+                doctors with patient lost temporarily or permanently possibility of speaking.</span
+              >
+            </div>
+          </div>
+          <div class="content__descr content--subhead" data-lang="proj03-descr-5">
+            Information communicators are used for the following purposes:
+          </div>
+          <div class="content__descr">
+            <ul class="content__descr-ul">
+              <li data-lang="proj01-descr-5-1">
+                In medicine: for supporting first contact of doctors with patients (with voice limitation), and getting
+                information about patient state, for example, during the preliminary examination of patients.
+                Particularly it is very important for family doctors because they are the firsts who examine patients
+                with different diseases. Sometimes family doctors have no enough knowledge and experience to diagnose.
+              </li>
+              <li data-lang="proj01-descr-5-2">
+                To make emergency medical aid for patients with voice limitation: in this case the information
+                communicators help patients to communicate with doctors.
+              </li>
+            </ul>
+          </div>
+          <div class="content__descr content--justify" data-lang="proj03-descr-5">
+            The other aim of information communicator is to support alternative communication with voice and motion
+            limited patients. The idea of alternative communication is rather simple. Voice limited patient needs
+            communication with surroundings in any way. The process of establishing relations with additional means
+            helps patient with voice limitation to express his needs and wishes.
+          </div>
+          <div class="content__descr content--subhead" data-lang="proj03-descr-7">Main developer:</div>
+          <div class="content__descr" data-lang="proj03-descr-7-1">Volodymyr ROMANOV</div>
+        </div>
+        <!-- END OF Content inner-->
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__copyright">
+            © 2023,
+            <span data-lang="footer-department">
+              Acquisition System Department of V.M.Glushkov's Institute of Cybernetics of NAS of Ukraine</span
+            >
+          </div>
+          <div class="footer__developer"><span data-lang="footer-created">Created by</span> Gibish</div>
+        </div>
+      </div>
+    </footer>
+    <script src="/lng/lng_header.js"></script>
+    <script src="/lng/lng_project03.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
