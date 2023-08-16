@@ -4,6 +4,8 @@ const langButtons = document.querySelectorAll("[data-btn]");
 const currentPathName = window.location.pathname;
 let currentText = {};
 
+console.log(currentPathName);
+
 function checkPagePathName() {
   currentText = headerText;
   switch (currentPathName) {
