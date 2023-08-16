@@ -1,8 +1,10 @@
 const allLangs = ["en", "ua"];
 let currentLang = localStorage.getItem("language") || checkBrowserLang() || "en";
 const langButtons = document.querySelectorAll("[data-btn]");
-const currentPathName = window.location.pathname;
+const currentPathNameFull = window.location.pathname;
 let currentText = {};
+
+const currentPathName = currentPathNameFull.slice(currentPathNameFull.lastIndexOf("/"));
 
 console.log(currentPathName);
 
