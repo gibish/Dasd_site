@@ -29,7 +29,7 @@ body {
 .header {
   padding: 25px 0;
   background-color: var(--color-bg);
-  background: no-repeat center / cover url(/img/bg.jpg);
+  background: no-repeat center / cover url(./img/bg.jpg);
   background-blend-mode: multiply;
   position: relative;
 }
