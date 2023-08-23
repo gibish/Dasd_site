@@ -134,3 +134,32 @@ navToggle.addEventListener("click", (event) => {
   navMenu.classList.toggle("nav__menu-active");
   navToggle.classList.toggle("active");
 });
+
+const btnGetPubl = document.getElementById("btn_test");
+
+btnGetPubl.addEventListener("click", (event) => {
+  getPublication();
+});
+
+async function getPublication() {
+  console.log("Pressed!");
+  const tokenURL = "https://sandbox.orcid.org/oauth/token";
+  const data = {
+    client_id: "APP-DEY8Q8XXRKH2QWRX",
+    client_secret: "29683976-dab6-4c3f-bf50-80f5c7a2a8c2",
+    grant_type: "client_credentials",
+    scope: "/read-public",
+  };
+
+  try {
+    const response = await fetch(tokenURL, {
+      method: "POST",
+      body: JSON.stringify(data),
+      headers: { "Content-Type": "application/json" },
+    });
+    const json = await response.json();
+    console.log("Success:", JSON.stringify(json));
+  } catch (error) {
+    console.error("Error: ", error);
+  }
+}

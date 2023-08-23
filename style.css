@@ -540,6 +540,20 @@ body {
   margin-bottom: 20px;
 }
 
+.btn__test {
+  display: block;
+  color: var(--color-text);
+  padding: 5px 25px;
+  font-size: 16px;
+  background-color: var(--color-bg3);
+  border: var(--color-link) solid 1px;
+  border-radius: 5px;
+}
+.btn__test:hover {
+  background-color: var(--color-link);
+  color: var(--color-bg3);
+}
+
 /*=== MEDIA === */
 
 @media (max-width: 1100px) {
