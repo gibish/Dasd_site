@@ -143,7 +143,7 @@ btnGetPubl.addEventListener("click", (event) => {
 
 async function getPublication() {
   console.log("Pressed!");
-  const tokenURL = "https://sandbox.orcid.org/oauth/token";
+  const tokenURL = "https://orcid.org/oauth/token";
   const data = {
     client_id: "APP-DEY8Q8XXRKH2QWRX",
     client_secret: "29683976-dab6-4c3f-bf50-80f5c7a2a8c2",
@@ -154,6 +154,7 @@ async function getPublication() {
   try {
     const response = await fetch(tokenURL, {
       method: "POST",
+      mode: "cors",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
     });
