@@ -143,14 +143,14 @@ btnGetPubl.addEventListener("click", (event) => {
 
 async function getPublication() {
   console.log("Pressed!");
-  const tokenURL = "https://pub.orcid.org/v3.0/0000-0003-1504-4439/record";
+  const tokenURL = "https://pub.orcid.org/v3.0/0000-0003-1504-4439/works/";
 
   try {
     const response = await fetch(tokenURL, {
       method: "GET",
       headers: {
         "Content-Type": "application/vnd.orcid+json",
-        Authorization: "Bearer ffab5ba0-6343-465f-b4e1-36c86a57a692",
+        //        Authorization: "Bearer ffab5ba0-6343-465f-b4e1-36c86a57a692",
       },
     });
     const json = await response.json();
