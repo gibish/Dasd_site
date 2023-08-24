@@ -148,6 +148,7 @@ async function getPublication() {
   try {
     const response = await fetch(tokenURL, {
       method: "GET",
+      mode: "no-cors",
       headers: {
         "Content-Type": "application/vnd.orcid+json",
         Authorization: "Bearer ffab5ba0-6343-465f-b4e1-36c86a57a692",
