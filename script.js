@@ -154,12 +154,13 @@ async function getPublication() {
   try {
     const response = await fetch(tokenURL, {
       method: "POST",
-      body: JSON.stringify(data),
       headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
     });
     const json = await response.json();
     console.log("Success:", JSON.stringify(json));
   } catch (error) {
     console.error("Error: ", error);
   }
+  console.log("Pressed finally!");
 }
