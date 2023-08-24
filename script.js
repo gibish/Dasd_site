@@ -143,21 +143,15 @@ btnGetPubl.addEventListener("click", (event) => {
 
 async function getPublication() {
   console.log("Pressed!");
-  const tokenURL = "https://orcid.org/oauth/token";
-  const data = {
-    client_id: "APP-DEY8Q8XXRKH2QWRX",
-    client_secret: "29683976-dab6-4c3f-bf50-80f5c7a2a8c2",
-    grant_type: "authorization_code",
-    redirect_uri: "REPLACE WITH REDIRECT URI",
-    code: "REPLACE WITH OAUTH CODE",
-    //   scope: "/read-public",
-  };
+  const tokenURL = "https://api.orcid.org/v3.0/0000-0003-1504-4439/record";
 
   try {
     const response = await fetch(tokenURL, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(data),
+      method: "GET",
+      headers: {
+        "Content-Type": "application/vnd.orcid+json",
+        Authorization: "Bearer ffab5ba0-6343-465f-b4e1-36c86a57a692",
+      },
     });
     const json = await response.json();
     console.log("Success:", JSON.stringify(json));
