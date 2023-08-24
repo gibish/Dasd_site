@@ -147,14 +147,15 @@ async function getPublication() {
   const data = {
     client_id: "APP-DEY8Q8XXRKH2QWRX",
     client_secret: "29683976-dab6-4c3f-bf50-80f5c7a2a8c2",
-    grant_type: "client_credentials",
-    scope: "/read-public",
+    grant_type: "authorization_code",
+    redirect_uri: "REPLACE WITH REDIRECT URI",
+    code: "REPLACE WITH OAUTH CODE",
+    //   scope: "/read-public",
   };
 
   try {
     const response = await fetch(tokenURL, {
       method: "POST",
-      mode: "no-cors",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
     });
