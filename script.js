@@ -154,7 +154,7 @@ async function getPublication() {
   try {
     const response = await fetch(tokenURL, {
       method: "POST",
-      mode: "cors",
+      mode: "no-cors",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
     });
