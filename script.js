@@ -143,7 +143,7 @@ btnGetPubl.addEventListener("click", (event) => {
 
 async function getPublication() {
   console.log("Pressed!");
-  const tokenURL = "https://api.orcid.org/v3.0/0000-0003-1504-4439/record";
+  const tokenURL = "https://pub.orcid.org/v3.0/0000-0003-1504-4439/record";
 
   try {
     const response = await fetch(tokenURL, {
