@@ -155,12 +155,16 @@ async function getPublication() {
     "0000-0001-6277-8756", // Romanov V.
   ];
 
-  let requests = orcidNumbers.map((orcidNumber) => fetch(`${mainURL}${orcidNumber}${sufWorksURL}`), {
+  let opt = {
     method: "GET",
     headers: {
       "Content-Type": "application/vnd.orcid+json",
     },
-  });
+  };
+
+  let requests = orcidNumbers.map((orcidNumber) => fetch(`${mainURL}${orcidNumber}${sufWorksURL}`, opt));
+
+  console.log(requests);
 
   Promise.all(requests)
     .then((responses) => {
@@ -170,7 +174,7 @@ async function getPublication() {
       //      console.log(responses);
       return responses;
     })
-    .then((responses) => Promise.all(responses.map((r) => r.text())))
+    .then((responses) => Promise.all(responses.map((r) => r.json())))
     .then((lists) => lists.forEach((list) => console.log(list)))
     .catch((error) => console.log("My error:", error));
 
