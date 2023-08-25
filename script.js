@@ -144,19 +144,61 @@ btnGetPubl.addEventListener("click", (event) => {
 async function getPublication() {
   console.log("Pressed!");
   const tokenURL = "https://pub.orcid.org/v3.0/0000-0003-1504-4439/works/";
+  //const tokenURL = "https://pub.orcid.org/v3.0/0000-0003-1504-4439/work/135465434";
 
-  try {
-    const response = await fetch(tokenURL, {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/vnd.orcid+json",
-        //        Authorization: "Bearer ffab5ba0-6343-465f-b4e1-36c86a57a692",
-      },
-    });
-    const json = await response.json();
-    console.log("Success:", JSON.stringify(json));
-  } catch (error) {
-    console.error("Error: ", error);
-  }
+  const mainURL = "https://pub.orcid.org/v3.0/";
+  const sufWorksURL = "/works/";
+  const sufWorkURL = "/work/";
+
+  let orcidNumbers = [
+    "0000-0003-1504-4439", // Galelyuka I.
+    "0000-0001-6277-8756", // Romanov V.
+  ];
+
+  let requests = orcidNumbers.map((orcidNumber) => fetch(`${mainURL}${orcidNumber}${sufWorksURL}`), {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/vnd.orcid+json",
+    },
+  });
+
+  Promise.all(requests)
+    .then((responses) => {
+      responses.forEach((response) => {
+        console.log(response.url, response.status);
+      });
+      //      console.log(responses);
+      return responses;
+    })
+    .then((responses) => Promise.all(responses.map((r) => r.text())))
+    .then((lists) => lists.forEach((list) => console.log(list)))
+    .catch((error) => console.log("My error:", error));
+
+  // try {
+  //   const response = await fetch(tokenURL, {
+  //     method: "GET",
+  //     headers: {
+  //       "Content-Type": "application/vnd.orcid+json",
+  //       //        Authorization: "Bearer ffab5ba0-6343-465f-b4e1-36c86a57a692",
+  //     },
+  //   });
+  //   const json = await response.json();
+  //   displayPublication(json);
+  //   //    displayPublication(JSON.stringify(json));
+  //   //    console.log("Success:", JSON.stringify(json));
+  // } catch (error) {
+  //   console.error("Error: ", error);
+  // }
+
   console.log("Pressed finally!");
+}
+
+function displayPublication(json) {
+  let list = new Set();
+  json.group.forEach((pub, i) => {
+    list.add(pub["work-summary"][0]["put-code"]);
+    //    console.log(i, pub["work-summary"][0]["put-code"]);
+  });
+
+  console.log("F:", list);
 }
