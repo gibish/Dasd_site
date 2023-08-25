@@ -164,8 +164,6 @@ async function getPublication() {
 
   let requests = orcidNumbers.map((orcidNumber) => fetch(`${mainURL}${orcidNumber}${sufWorksURL}`, opt));
 
-  console.log(requests);
-
   Promise.all(requests)
     .then((responses) => {
       responses.forEach((response) => {
