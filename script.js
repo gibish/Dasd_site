@@ -137,18 +137,19 @@ navToggle.addEventListener("click", (event) => {
 
 const btnGetPubl = document.getElementById("btn_test");
 
-btnGetPubl.addEventListener("click", (event) => {
+btnGetPubl.addEventListener("click", () => {
   getPublication();
 });
 
 async function getPublication() {
-  console.log("Pressed!");
-  const tokenURL = "https://pub.orcid.org/v3.0/0000-0003-1504-4439/works/";
-  //const tokenURL = "https://pub.orcid.org/v3.0/0000-0003-1504-4439/work/135465434";
+  //const tokenURL = "https://pub.orcid.org/v3.0/0000-0003-1504-4439/works/";
+  //const tokenURL = "https://pub.orcid.org/v3.0/0000-0003-1504-4439/work/135465434/";
 
-  const mainURL = "https://pub.orcid.org/v3.0/";
+  const mainURL = "https://pub.orcid.org/v3.0";
   const sufWorksURL = "/works/";
   const sufWorkURL = "/work/";
+
+  let publications = [];
 
   let orcidNumbers = [
     "0000-0003-1504-4439", // Galelyuka I.
@@ -162,45 +163,66 @@ async function getPublication() {
     },
   };
 
-  let requests = orcidNumbers.map((orcidNumber) => fetch(`${mainURL}${orcidNumber}${sufWorksURL}`, opt));
+  let requests = orcidNumbers.map((orcidNumber) => fetch(`${mainURL}/${orcidNumber}${sufWorksURL}`, opt));
 
   Promise.all(requests)
-    .then((responses) => {
-      responses.forEach((response) => {
-        console.log(response.url, response.status);
-      });
-      //      console.log(responses);
-      return responses;
+    /* Checking status of all fetch*/
+    // .then((responses) => {
+    //   responses.forEach((response) => {
+    //     console.log(response.url, response.status);
+    //   });
+    //   return responses;
+    // })
+    .then((responses) => Promise.all(responses.map((res) => res.json())))
+    .then((lists) =>
+      lists.forEach((list) => {
+        list.group.forEach((item, i) => {
+          publications.findIndex((el) => el.title == item["work-summary"][0]["title"]["title"].value) + 1
+            ? {}
+            : publications.push(prepareList(item));
+        });
+      })
+    )
+    .then(() => {
+      //      console.log("Last:", publications);
+
+      let requestsOne = publications.map((publicationOne) => fetch(`${mainURL}${publicationOne.path}`, opt));
+
+      Promise.all(requestsOne)
+        /* Checking status of all fetch*/
+        // .then((responsesOne) => {
+        //   responsesOne.forEach((responseOne) => {
+        //     console.log(responseOne.url, responseOne.status);
+        //   });
+        //   return responsesOne;
+        // })
+        .then((responsesOne) => Promise.all(responsesOne.map((res) => res.json())))
+        .then((lists) =>
+          lists.forEach((item, i) => {
+            //            console.log(item);
+            let authors = "";
+            let authorsCount = item["contributors"]["contributor"].length;
+            item["contributors"]["contributor"].forEach((contr, j) => {
+              authors += contr["credit-name"].value;
+              j < authorsCount - 1 ? (authors += ", ") : {};
+            });
+            publications[i].authors = authors;
+            publications[i].url = item.url.value;
+          })
+        )
+        .catch((error) => console.log("My One error:", error));
     })
-    .then((responses) => Promise.all(responses.map((r) => r.json())))
-    .then((lists) => lists.forEach((list) => console.log(list)))
     .catch((error) => console.log("My error:", error));
 
-  // try {
-  //   const response = await fetch(tokenURL, {
-  //     method: "GET",
-  //     headers: {
-  //       "Content-Type": "application/vnd.orcid+json",
-  //       //        Authorization: "Bearer ffab5ba0-6343-465f-b4e1-36c86a57a692",
-  //     },
-  //   });
-  //   const json = await response.json();
-  //   displayPublication(json);
-  //   //    displayPublication(JSON.stringify(json));
-  //   //    console.log("Success:", JSON.stringify(json));
-  // } catch (error) {
-  //   console.error("Error: ", error);
-  // }
-
-  console.log("Pressed finally!");
+  console.log("Publications:", publications);
 }
 
-function displayPublication(json) {
-  let list = new Set();
-  json.group.forEach((pub, i) => {
-    list.add(pub["work-summary"][0]["put-code"]);
-    //    console.log(i, pub["work-summary"][0]["put-code"]);
-  });
+function prepareList(item) {
+  let publication = { title: null, journalTitle: null, path: null, publDate: null };
+  publication.title = item["work-summary"][0]["title"]["title"].value;
+  publication.journalTitle = item["work-summary"][0]["journal-title"].value;
+  publication.path = item["work-summary"][0]["path"];
+  publication.publDate = item["work-summary"][0]["publication-date"];
 
-  console.log("F:", list);
+  return publication;
 }
