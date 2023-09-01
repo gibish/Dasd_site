@@ -468,6 +468,48 @@ body {
   line-height: 1.2;
 }
 
+.content__list-publications-ol {
+  margin-top: 1em;
+  padding-left: 1.5em;
+  list-style-type: decimal;
+  list-style-position: outside;
+}
+
+.content__list-publications-ol li {
+  line-height: 1.3;
+  margin-bottom: 1em;
+}
+
+.content__list-title {
+  font-size: 1.1em;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.2em;
+}
+
+.content__list-authors {
+  display: block;
+  font-style: italic;
+  margin-bottom: 0.2em;
+}
+
+.content__list-issue,
+.content__list-date,
+.content__list-link {
+  display: block;
+  margin-bottom: 0.2em;
+}
+
+.content__list-link-a {
+  color: var(--color-text-link);
+  transition: all 0.2s ease-in;
+}
+
+.content__list-link-a:hover {
+  color: var(--color-link);
+  transition: all 0.2s ease-in;
+}
+
 .content--justify {
   text-align: justify;
 }

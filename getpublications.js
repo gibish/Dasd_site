@@ -1,8 +1,8 @@
-const btnGetPubl = document.getElementById("btn_test");
+// const btnGetPubl = document.getElementById("btn_test");
 
-btnGetPubl.addEventListener("click", () => {
-  getPublication();
-});
+// btnGetPubl.addEventListener("click", () => {
+//   getPublication();
+// });
 
 async function getPublication() {
   //const tokenURL = "https://pub.orcid.org/v3.0/0000-0003-1504-4439/works/";
@@ -85,6 +85,9 @@ async function getPublication() {
               : -1;
           });
         })
+        .then(() => {
+          displayList(publications);
+        })
         .catch((error) => console.log("My One error:", error));
     })
     .catch((error) => console.log("My error:", error));
@@ -110,3 +113,33 @@ function prepareList(item) {
 
   return publication;
 }
+
+function displayList(publications) {
+  const publicationsOrderedList = document.getElementById("content__list-publications-ol");
+  publications.forEach((publ, i) => {
+    let li = document.createElement("li");
+    let spanTitle = document.createElement("span");
+    spanTitle.classList.add("content__list-title");
+    spanTitle.innerHTML = `${publ.title}`;
+    let spanAuthors = document.createElement("span");
+    spanAuthors.classList.add("content__list-authors");
+    spanAuthors.innerHTML = `Authors: ${publ.authors}`;
+    let spanIssue = document.createElement("span");
+    spanIssue.classList.add("content__list-issue");
+    spanIssue.innerHTML = `Issue title: ${publ.journalTitle}`;
+    let spanDate = document.createElement("span");
+    spanDate.classList.add("content__list-date");
+    spanDate.innerHTML = `Publication date: ${publ.publDate.day == "00" ? "" : publ.publDate.day + "."}${
+      publ.publDate.month == "00" ? "" : publ.publDate.month + "."
+    }${publ.publDate.year == "0000" ? "" : publ.publDate.year}`;
+    let spanLink = document.createElement("span");
+    spanLink.classList.add("content__list-link");
+    spanLink.innerHTML = `URL: <a class="content__list-link-a" href="${publ.url}" target="_blank">${publ.url}</a>`;
+
+    li.append(spanTitle, spanAuthors, spanIssue, spanDate, spanLink);
+
+    publicationsOrderedList.append(li);
+  });
+}
+
+getPublication();
