@@ -61,7 +61,7 @@ async function getPublication() {
         .then((responsesOne) => Promise.all(responsesOne.map((res) => res.json())))
         .then((lists) =>
           lists.forEach((item, i) => {
-            //            console.log(item);
+            console.log(item);
             let authors = "";
             let authorsCount = item["contributors"]["contributor"].length;
             item["contributors"]["contributor"].forEach((contr, j) => {
@@ -70,6 +70,16 @@ async function getPublication() {
             });
             publications[i].authors = authors;
             publications[i].url = item.url.value;
+            if (!publications[i].url.includes("doi")) {
+              let res = "https://doi.org/";
+              item["external-ids"]["external-id"].forEach((item) => {
+                if (item["external-id-type"].includes("doi")) {
+                  res += item["external-id-normalized"].value;
+                  publications[i].url = res;
+                }
+              });
+              console.log(res);
+            }
           })
         )
         .then(() => {
@@ -116,10 +126,11 @@ function prepareList(item) {
 
 function displayList(publications) {
   const publicationsOrderedList = document.getElementById("content__list-publications-ol");
+  publicationsOrderedList.innerHTML = "";
   publications.forEach((publ, i) => {
     let li = document.createElement("li");
     let spanTitle = document.createElement("span");
-    spanTitle.classList.add("content__list-title");
+    spanTitle.classList.add("content__list-title", "content--subhead-color");
     spanTitle.innerHTML = `${publ.title}`;
     let spanAuthors = document.createElement("span");
     spanAuthors.classList.add("content__list-authors");

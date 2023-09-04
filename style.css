@@ -478,6 +478,11 @@ body {
 .content__list-publications-ol li {
   line-height: 1.3;
   margin-bottom: 1em;
+  border-bottom: 1px dotted;
+}
+
+.content__list-publications-ol li:last-child {
+  border-bottom: none;
 }
 
 .content__list-title {
@@ -501,7 +506,7 @@ body {
 }
 
 .content__list-link-a {
-  color: var(--color-text-link);
+  color: var(--color-text);
   transition: all 0.2s ease-in;
 }
 
@@ -528,9 +533,22 @@ body {
   text-transform: uppercase;
 }
 
+.content--subhead-color {
+  color: var(--color-text-link);
+}
+
 .content--bg-white {
   background-color: rgba(255, 255, 255, 0.163);
   border: rgba(141, 138, 138, 0.7) solid 1px;
+}
+
+.content__loading {
+  display: inline-block;
+  min-width: 100%;
+  font-size: 32px;
+  text-align: center;
+  padding: 25px 0;
+  color: var(--color-text-link);
 }
 
 /* === FOOTER === */
@@ -638,7 +656,9 @@ body {
     font-size: 18px;
   }
 
-  .content__descr {
+  .content__descr,
+  .content__descr-ul,
+  .content__descr-ul li {
     font-size: 14px;
   }
 
@@ -746,7 +766,9 @@ body {
     font-size: 16px;
   }
 
-  .content__descr {
+  .content__descr,
+  .content__descr-ul,
+  .content__descr-ul li {
     font-size: 12px;
     text-align: left;
   }
