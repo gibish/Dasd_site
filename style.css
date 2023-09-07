@@ -156,11 +156,33 @@ body {
 
 .nav__item:hover {
   /* color: var(--color-link); */
-  color: #88881b;
+  color: var(--color-text);
 }
 
 .nav__item.active {
   color: var(--color-link);
+}
+
+.nav__theme {
+  display: flex;
+}
+
+.nav__theme::after {
+  content: "";
+  display: flex;
+  width: 1px;
+
+  margin: 7px 5px;
+  background-color: var(--color-link);
+  align-items: center;
+}
+
+.nav__img-theme {
+  display: flex;
+  height: 16px;
+  width: 16px;
+  align-items: center;
+  pointer-events: none;
 }
 
 /* === NAV-TOGGLE === */
