@@ -274,6 +274,7 @@ body {
 .content {
   font-size: 18px;
   color: var(--color-text2);
+  font-weight: 500;
   letter-spacing: 0.1em;
 }
 
