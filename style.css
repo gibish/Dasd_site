@@ -681,7 +681,7 @@ body {
 
   .nav__item {
     font-size: 12px;
-    margin: 0px 4px;
+    margin: 0px 7px;
   }
 
   .content__projects-item-title {
@@ -691,7 +691,7 @@ body {
 
 @media (max-width: 1000px) {
   .header__department {
-    font-size: 28px;
+    font-size: 26px;
   }
 
   .header__institute {
@@ -700,6 +700,11 @@ body {
 
   .header__nasu {
     font-size: 18px;
+  }
+
+  .nav__item {
+    font-size: 12px;
+    margin: 0px 5px;
   }
 
   .content__title {
