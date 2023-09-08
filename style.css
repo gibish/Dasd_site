@@ -5,8 +5,10 @@
   --color-bg2: #0b1b26;
   --color-bg3: #15232d;
   --color-text: #9ee7ff;
+  --color-text-menu: #9ee7ff;
   --color-text-link: #019dd1;
   --color-text2: #aaaa8e;
+  --color-text2-menu: #aaaa8e;
   --color-link: #e8e836;
 
   /* === DARK THEME === */
@@ -14,18 +16,22 @@
   --dark-color-bg2: #0b1b26;
   --dark-color-bg3: #15232d;
   --dark-color-text: #9ee7ff;
+  --dark-color-text-menu: #9ee7ff;
   --dark-color-text-link: #019dd1;
   --dark-color-text2: #aaaa8e;
+  --dark-color-text2-menu: #aaaa8e;
   --dark-color-link: #e8e836;
 
   /* === LIGHT THEME === */
-  --light-color-bg: #122939;
-  --light-color-bg2: #0b1b26;
-  --light-color-bg3: #15232d;
-  --light-color-text: #9ee7ff;
-  --light-color-text-link: #019dd1;
-  --light-color-text2: #aaaa8e;
-  --light-color-link: #e8e836;
+  --light-color-bg: #cacaca;
+  --light-color-bg2: #b5b5b5;
+  --light-color-bg3: #bab8b8;
+  --light-color-text: #015fac;
+  --light-color-text-menu: #9ee7ff;
+  --light-color-text-link: #1943b8;
+  --light-color-text2: #202022;
+  --light-color-text2-menu: #00177c;
+  --light-color-link: #e20606;
 }
 
 body {
@@ -50,6 +56,7 @@ body {
   background: no-repeat center / cover url(./img/bg.jpg);
   background-blend-mode: multiply;
   position: relative;
+  color: var(--color-text-menu);
 }
 
 .header__bgc {
@@ -68,7 +75,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.2em;
   line-height: 1.2;
-  color: var(--color-text);
+  color: var(--color-text-menu);
 }
 
 .header__department {
@@ -134,7 +141,7 @@ body {
   height: 100%;
   text-decoration: none;
   text-transform: uppercase;
-  color: var(--color-text2);
+  color: var(--color-text2-menu);
   background-color: transparent;
   margin: 0px 10px;
   font-size: 14px;
@@ -501,7 +508,7 @@ body {
 
 .content__projects-link .content__projects-item-title:hover {
   color: var(--color-text-link);
-  text-shadow: 2px 2px 4px black;
+  text-shadow: 1px 1px 3px rgb(74, 74, 74);
 }
 
 .content__projects-item-descr {
@@ -599,6 +606,7 @@ body {
   /*box-shadow: 1px -2px 4px black;*/
   border-top: 1px solid #808000;
   border-bottom: 1px solid #808000;
+  color: var(--color-text-link);
 }
 
 .footer__inner {
