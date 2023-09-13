@@ -116,7 +116,7 @@ const staffText = {
     ua: "Науковий співробітник",
   },
   "ant-name": {
-    en: "Ganna ANTONOVA",
+    en: "Hanna ANTONOVA",
     ua: "АНТОНОВА Ганна Валеріївна",
   },
   "ant-position": {
