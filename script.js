@@ -162,6 +162,7 @@ const changeTheme = (theme) => {
   document.documentElement.style.setProperty("--color-text2", `var(--${theme}-color-text2)`);
   document.documentElement.style.setProperty("--color-text2-menu", `var(--${theme}-color-text2-menu)`);
   document.documentElement.style.setProperty("--color-link", `var(--${theme}-color-link)`);
+  document.documentElement.style.setProperty("--color-shadow", `var(--${theme}-color-shadow)`);
 };
 
 changeTheme(currentTheme);

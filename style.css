@@ -11,6 +11,7 @@
   --color-text2: #aaaa8e;
   --color-text2-menu: #aaaa8e;
   --color-link: #e8e836;
+  --color-shadow: black;
 
   /* === DARK THEME === */
   --dark-color-bg: #122939;
@@ -23,11 +24,12 @@
   --dark-color-text2: #aaaa8e;
   --dark-color-text2-menu: #aaaa8e;
   --dark-color-link: #e8e836;
+  --dark-color-shadow: rgb(142, 142, 142);
 
   /* === LIGHT THEME === */
-  --light-color-bg: #ffffff;
-  --light-color-bg2: #f1f1f1;
-  --light-color-bg3: #f4f4f4;
+  --light-color-bg: #faf7e7;
+  --light-color-bg2: #fefadf;
+  --light-color-bg3: #fdf7d6;
   --light-color-text: #015fac;
   --light-color-text-menu: #9ec8ff;
   --light-color-text-menu-light: #cac9c9;
@@ -35,6 +37,7 @@
   --light-color-text2: #19191a;
   --light-color-text2-menu: #001367;
   --light-color-link: #e20606;
+  --light-color-shadow: rgb(0, 0, 0);
 }
 
 body {
@@ -106,7 +109,7 @@ body {
 .nav {
   margin: 0 0 10px 0;
   background-color: var(--color-bg2);
-  box-shadow: 1px 2px 4px black;
+  box-shadow: 1px 2px 4px var(--color-shadow);
   border-top: 1px solid #808000;
 }
 
