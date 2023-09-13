@@ -6,6 +6,7 @@
   --color-bg3: #15232d;
   --color-text: #9ee7ff;
   --color-text-menu: #9ee7ff;
+  --color-text-menu-light: #5a90b7;
   --color-text-link: #019dd1;
   --color-text2: #aaaa8e;
   --color-text2-menu: #aaaa8e;
@@ -17,6 +18,7 @@
   --dark-color-bg3: #15232d;
   --dark-color-text: #9ee7ff;
   --dark-color-text-menu: #9ee7ff;
+  --dark-color-text-menu-light: #5a90b7;
   --dark-color-text-link: #019dd1;
   --dark-color-text2: #aaaa8e;
   --dark-color-text2-menu: #aaaa8e;
@@ -28,6 +30,7 @@
   --light-color-bg3: #f4f4f4;
   --light-color-text: #015fac;
   --light-color-text-menu: #9ec8ff;
+  --light-color-text-menu-light: #cac9c9;
   --light-color-text-link: #1943b8;
   --light-color-text2: #19191a;
   --light-color-text2-menu: #001367;
@@ -164,7 +167,7 @@ body {
 
 .nav__item:hover {
   /* color: var(--color-link); */
-  color: var(--color-text-menu);
+  color: var(--color-link);
 }
 
 .nav__item.active {
@@ -191,6 +194,10 @@ body {
   width: 16px;
   align-items: center;
   pointer-events: none;
+}
+
+.nav--very-light {
+  color: var(--color-text-menu-light);
 }
 
 /* === NAV-TOGGLE === */

@@ -157,6 +157,7 @@ const changeTheme = (theme) => {
   document.documentElement.style.setProperty("--color-bg3", `var(--${theme}-color-bg3)`);
   document.documentElement.style.setProperty("--color-text", `var(--${theme}-color-text)`);
   document.documentElement.style.setProperty("--color-text-menu", `var(--${theme}-color-text-menu)`);
+  document.documentElement.style.setProperty("--color-text-menu-light", `var(--${theme}-color-text-menu-light)`);
   document.documentElement.style.setProperty("--color-text-link", `var(--${theme}-color-text-link)`);
   document.documentElement.style.setProperty("--color-text2", `var(--${theme}-color-text2)`);
   document.documentElement.style.setProperty("--color-text2-menu", `var(--${theme}-color-text2-menu)`);
