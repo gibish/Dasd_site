@@ -17,6 +17,7 @@ async function getPublication() {
   let orcidNumbers = [
     "0000-0003-1504-4439", // Galelyuka I.
     "0000-0001-6277-8756", // Romanov V.
+    "0000-0003-1784-4296", // Kedych A.
   ];
 
   let opt = {
@@ -70,7 +71,7 @@ async function getPublication() {
             });
             publications[i].authors = authors;
             publications[i].url = item.url.value;
-            if (!publications[i].url.includes("doi")) {
+            if (!publications[i].url.includes("doi") && item["external-ids"]["external-id"]) {
               let res = "https://doi.org/";
               item["external-ids"]["external-id"].forEach((item) => {
                 if (item["external-id-type"].includes("doi")) {
@@ -106,9 +107,12 @@ async function getPublication() {
 }
 
 function prepareList(item) {
+  // console.log("I:", item);
+
   let publication = { title: null, journalTitle: null, path: null, publDate: { year: null, month: null, day: null } };
   publication.title = item["work-summary"][0]["title"]["title"].value;
-  publication.journalTitle = item["work-summary"][0]["journal-title"].value;
+  publication.journalTitle =
+    item["work-summary"][0]["journal-title"] !== null ? item["work-summary"][0]["journal-title"].value : "n/a";
   publication.path = item["work-summary"][0]["path"];
   //publication.publDate = item["work-summary"][0]["publication-date"];
   publication.publDate.year = !item["work-summary"][0]["publication-date"]["year"]
