@@ -79,7 +79,7 @@ async function getPublication() {
                   publications[i].url = res;
                 }
               });
-              console.log(res);
+              //             console.log(res);
             }
           })
         )
