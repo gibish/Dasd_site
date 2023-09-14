@@ -4,8 +4,8 @@ const departmentText = {
     ua: "Про відділ перетворювачів форми інформації",
   },
   "dept-content-1": {
-    en: "The department was founded by doctor of sciences, professor A.I. Kondalev in 1963, who was at the head till 1989. There are 21 scientists in the department now including 4 Doctors of sciences, and 4 PhDs.",
-    ua: "Відділ засновано 1963 року доктором технічних наук, професором А.І. Кондалєвим, який очолював його до 1989 року. У відділі працюють 21 наукових співробітників, серед них – 4 доктори та 4 кандидати наук.",
+    en: "The department was founded by doctor of sciences, professor A.I. Kondalev in 1963, who was at the head till 1989. There are 20 scientists in the department now including 4 Doctors of sciences, and 4 PhDs.",
+    ua: "Відділ засновано 1963 року доктором технічних наук, професором А.І. Кондалєвим, який очолював його до 1989 року. У відділі працюють 20 наукових співробітників, серед них – 4 доктори та 4 кандидати наук.",
   },
   "dept-content-2": {
     en: "Now the department is headed by doctor of sciences, professor V.O. Romanov.",
