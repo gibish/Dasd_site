@@ -72,7 +72,7 @@ const staffText = {
     ua: "Старший науковий співробітник",
   },
   "bab-degree": {
-    en: "Candidate of agricultural sciences (PhD)",
+    en: "Candidate of agricultural sciences (Ph.D. of Crop Science)",
     ua: "Кандидат сільськогоподарських наук",
   },
   "kos-name": {
