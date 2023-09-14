@@ -366,6 +366,12 @@ body {
   flex-direction: row;
 }
 
+.content__descr.column {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
 .content__descr-img.content__columns {
   width: 49%;
 }
