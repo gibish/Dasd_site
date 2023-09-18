@@ -379,8 +379,8 @@ body {
 .content__descr-img-ref {
   align-items: center;
   justify-content: center;
-  max-height: 35px;
-  padding: 4px 5px;
+  max-height: 36px;
+  padding: 4px 3px;
   border-radius: 5px;
   border: 1px solid transparent;
 }
@@ -746,6 +746,10 @@ body {
     font-size: 14px;
   }
 
+  .content__descr-span {
+    text-align: center;
+  }
+
   .content__projects-item {
     width: 49%;
   }
@@ -816,6 +820,10 @@ body {
     width: 100%;
   }
 
+  .content__descr-span {
+    text-align: left;
+  }
+
   .content__descr-img-proj {
     flex-direction: column;
   }
@@ -855,6 +863,10 @@ body {
   .content__descr-ul li {
     font-size: 12px;
     text-align: left;
+  }
+
+  .content__descr-span {
+    text-align: center;
   }
 
   .content__img-proj-big {
