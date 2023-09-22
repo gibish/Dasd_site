@@ -151,9 +151,10 @@ function displayList(publications) {
     spanLink.classList.add("content__list-link");
     spanLink.innerHTML = `URL: <a class="content__list-link-a" href="${publ.url}" target="_blank">${publ.url}</a>`;
 
-    li.append(spanTitle, spanAuthors, spanIssue, spanDate, spanLink);
-
-    publicationsOrderedList.append(li);
+    if (publ.journalTitle !== "n/a" && publ.authors) {
+      li.append(spanTitle, spanAuthors, spanIssue, spanDate, spanLink);
+      publicationsOrderedList.append(li);
+    }
   });
 }
 
