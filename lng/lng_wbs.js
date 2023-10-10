@@ -1,4 +1,4 @@
-const wbsText = {
+﻿const wbsText = {
   "under-development": {
     en: "The page is under development",
     ua: "Сторінка у розробці",

@@ -1,4 +1,4 @@
-const departmentText = {
+﻿const departmentText = {
   "dept-content-welcome": {
     en: "About Data Acquisition System Department",
     ua: "Про відділ перетворювачів форми інформації",

@@ -1,4 +1,4 @@
-const mainText = {
+﻿const mainText = {
   "content-welcome": {
     en: "Welcome to Site",
     ua: "Вітаємо на сайті",

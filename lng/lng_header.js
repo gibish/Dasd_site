@@ -1,4 +1,4 @@
-const headerText = {
+﻿const headerText = {
   "header-department": {
     en: "Data acquisition system department",
     ua: "Відділ перетворювачів форми інформації",

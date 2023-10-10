@@ -1,4 +1,4 @@
-const staffText = {
+﻿const staffText = {
   "staff-content-welcome": {
     en: "Department staff",
     ua: "Співробітники відділу",

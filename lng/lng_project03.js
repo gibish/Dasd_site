@@ -1,4 +1,4 @@
-const project03Text = {
+﻿const project03Text = {
   "proj03-content-welcome": {
     en: "Information Communicator for Medicine",
     ua: "Медичний комунікатор для медицини",

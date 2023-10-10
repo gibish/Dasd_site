@@ -1,4 +1,4 @@
-const project01Text = {
+﻿const project01Text = {
   "proj01-content-welcome": {
     en: "Portable device 'FLORATEST'",
     ua: "Портативний прилад 'ФЛОРАТЕСТ'",

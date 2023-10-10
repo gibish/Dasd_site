@@ -1,4 +1,4 @@
-const publicationsText = {
+﻿const publicationsText = {
   "publ-content-welcome": {
     en: "Selected Publications",
     ua: "Вибрані публікації",

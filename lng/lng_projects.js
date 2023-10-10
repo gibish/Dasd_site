@@ -1,4 +1,4 @@
-const projectsText = {
+﻿const projectsText = {
   "proj-content-welcome": {
     en: "Latest projects",
     ua: "Останні проекти",

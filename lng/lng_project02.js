@@ -1,4 +1,4 @@
-const project02Text = {
+﻿const project02Text = {
   "proj02-content-welcome": {
     en: "Wireless Sensor Network for Agriculture",
     ua: "Бездротова сенсорна мережа для сільського господарства",

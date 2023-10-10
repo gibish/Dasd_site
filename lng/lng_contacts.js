@@ -1,4 +1,4 @@
-const contactsText = {
+﻿const contactsText = {
   "cont-content-welcome": {
     en: "Contacts",
     ua: "Контакти",

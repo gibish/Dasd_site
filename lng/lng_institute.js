@@ -1,4 +1,4 @@
-const instituteText = {
+﻿const instituteText = {
   "inst-content-welcome": {
     en: "About V.M.Glushkov's Institute of Cybernetics",
     ua: "Про інститут кібернетики імені В.М.Глушкова",
