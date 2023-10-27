@@ -100,8 +100,8 @@
     ua: "ГРУША Володимир Михайлович",
   },
   "hru-position": {
-    en: "Research fellow",
-    ua: "Науковий співробітник",
+    en: "Senior research fellow",
+    ua: "Старший науковий співробітник",
   },
   "hru-degree": {
     en: "Candidate of technical sciences (PhD)",
