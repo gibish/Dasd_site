@@ -84,8 +84,8 @@
     ua: "Старший науковий співробітник",
   },
   "kos-degree": {
-    en: "Candidate of technical sciences (PhD)",
-    ua: "Кандидат технічних наук",
+    en: "Candidate of geological and mineralogical sciences (PhD)",
+    ua: "Кандидат геолого-мінералогічних наук",
   },
   "bra-name": {
     en: "Yuriy BRAYKO",
